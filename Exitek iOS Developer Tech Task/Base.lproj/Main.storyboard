@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Exitek_iOS_Developer_Tech_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSr-ht-DLc">
+                                <rect key="frame" x="174" y="433" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add new Device"/>
+                                <connections>
+                                    <action selector="addNewDeviceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Pi-Ws-8W9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LN-MV-9cO">
+                                <rect key="frame" x="107" y="510.5" width="200" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ckX-BV-ECi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Find by IMEI"/>
+                                <connections>
+                                    <action selector="findByIMEITapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LOa-1K-RSF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nr-j7-yBK">
+                                <rect key="frame" x="62" y="569" width="290" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Find all saved devices"/>
+                                <connections>
+                                    <action selector="findAllTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tbF-p2-IpN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xv-AO-EUm">
+                                <rect key="frame" x="107" y="639" width="200" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="oxs-B2-Eit"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete by IMEI">
+                                    <color key="baseForegroundColor" systemColor="systemPinkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJT-FW-lqY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7LN-MV-9cO" firstAttribute="top" secondItem="SSr-ht-DLc" secondAttribute="bottom" constant="42" id="2cX-5U-5j8"/>
+                            <constraint firstItem="9Xv-AO-EUm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DHz-89-amF"/>
+                            <constraint firstItem="SSr-ht-DLc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0345982" id="Dhr-Bk-v4Q"/>
+                            <constraint firstItem="1Nr-j7-yBK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="fRy-Cs-RYl"/>
+                            <constraint firstItem="SSr-ht-DLc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pdw-t5-akA"/>
+                            <constraint firstItem="9Xv-AO-EUm" firstAttribute="top" secondItem="1Nr-j7-yBK" secondAttribute="bottom" constant="39" id="pxO-bQ-pFg"/>
+                            <constraint firstItem="7LN-MV-9cO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rlG-pX-Xa2"/>
+                            <constraint firstItem="1Nr-j7-yBK" firstAttribute="top" secondItem="7LN-MV-9cO" secondAttribute="bottom" constant="27.5" id="sRS-rR-r4f"/>
+                            <constraint firstItem="1Nr-j7-yBK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tho-n6-hDY"/>
+                            <constraint firstItem="SSr-ht-DLc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yk1-hv-Te4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
